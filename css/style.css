@@ -1,18 +1,18 @@
 /* ==========================================================================
    Alameda Racket Stringing — main stylesheet
-   Bold & sporty: deep near-black canvas, optic-yellow accent, big display type
+   Bold & sporty: warm off-white canvas, charcoal ink, optic-yellow accent
    ========================================================================== */
 
 :root {
-  --bg: #0A0A0C;
-  --surface: #15161A;
-  --surface-2: #1D1E24;
-  --border: #2A2C33;
-  --text: #F5F5F7;
-  --text-muted: #9B9DA4;
+  --bg: #F7F6F1;
+  --surface: #FFFFFF;
+  --surface-2: #EFEFEA;
+  --border: #E2E3DC;
+  --text: #14171A;
+  --text-muted: #5D6269;
   --accent: #D4FF3A;
-  --accent-hover: #E6FF5C;
-  --accent-ink: #0A0A0C;
+  --accent-hover: #C4F221;
+  --accent-ink: #14171A;
   --radius-lg: 1rem;
   --radius-xl: 1.5rem;
   --max-w: 1200px;
@@ -56,7 +56,7 @@ section { padding: 5rem 0; }
   z-index: 50;
   backdrop-filter: saturate(140%) blur(14px);
   -webkit-backdrop-filter: saturate(140%) blur(14px);
-  background: rgba(10, 10, 12, 0.78);
+  background: rgba(247, 246, 241, 0.82);
   border-bottom: 1px solid var(--border);
 }
 
@@ -181,7 +181,7 @@ section { padding: 5rem 0; }
   left: -10%;
   width: 70%;
   height: 120%;
-  background: radial-gradient(ellipse at center, rgba(212, 255, 58, 0.16), transparent 65%);
+  background: radial-gradient(ellipse at center, rgba(212, 255, 58, 0.28), transparent 65%);
   filter: blur(40px);
 }
 
@@ -189,8 +189,8 @@ section { padding: 5rem 0; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    linear-gradient(rgba(20,23,26,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20,23,26,0.05) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: linear-gradient(180deg, rgba(0,0,0,0.7), transparent 80%);
   -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.7), transparent 80%);
@@ -203,7 +203,14 @@ section { padding: 5rem 0; }
   text-transform: uppercase;
 }
 
-.hero h1 .accent { color: var(--accent); }
+.hero h1 .accent {
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: 0 0.18em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  border-radius: 0.08em;
+}
 
 .hero .lede {
   font-size: clamp(1.05rem, 2vw, 1.25rem);
@@ -216,7 +223,7 @@ section { padding: 5rem 0; }
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  color: var(--accent);
+  color: var(--text);
   font-size: 0.8rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -242,12 +249,13 @@ section { padding: 5rem 0; }
   font-size: 0.72rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-ink);
+  background: var(--accent);
   margin-bottom: 1rem;
-  padding: 0.35rem 0.8rem;
-  border: 1px solid rgba(212, 255, 58, 0.35);
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--accent);
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .section-header h2 {
@@ -400,7 +408,7 @@ section { padding: 5rem 0; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   z-index: 2;
-  color: var(--text);
+  color: #F5F5F7;
 }
 
 .string-body {
@@ -436,7 +444,7 @@ section { padding: 5rem 0; }
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--text);
   white-space: nowrap;
   line-height: 1;
 }
@@ -523,7 +531,7 @@ section { padding: 5rem 0; }
   color: var(--accent);
   border-color: var(--accent-ink);
 }
-.cta-banner .btn-primary:hover { background: #1d1e24; }
+.cta-banner .btn-primary:hover { background: #2a2d33; }
 
 /* ------- Contact row ------- */
 .contact-row {
@@ -547,9 +555,9 @@ section { padding: 5rem 0; }
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--text);
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .contact-card .value {
@@ -684,9 +692,12 @@ section { padding: 5rem 0; }
   font-family: 'Space Grotesk', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--text);
   line-height: 1;
   letter-spacing: -0.02em;
+  display: inline-block;
+  box-shadow: inset 0 -0.28em 0 var(--accent);
+  padding: 0 0.1em;
 }
 
 .stat .l {
@@ -804,7 +815,7 @@ section { padding: 5rem 0; }
 .service-list .svc-price {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--text);
   font-size: 1.15rem;
   white-space: nowrap;
 }
@@ -829,12 +840,14 @@ section { padding: 5rem 0; }
   counter-increment: step;
   content: counter(step, decimal-leading-zero);
   font-family: 'Space Grotesk', sans-serif;
-  color: var(--accent);
+  color: var(--text);
   font-size: 0.75rem;
   letter-spacing: 0.15em;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.75rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 3px solid var(--accent);
 }
 
 .step h4 {
@@ -859,7 +872,7 @@ section { padding: 5rem 0; }
     0 40px 80px -20px rgba(212,255,58,0.35),
     inset -20px -40px 60px rgba(0,0,0,0.25);
   z-index: -1;
-  opacity: 0.35;
+  opacity: 0.55;
 }
 .hero-illus::before,
 .hero-illus::after {
@@ -889,6 +902,100 @@ section { padding: 5rem 0; }
   .pricing-card { padding: 1.75rem; }
   .cta-banner { padding: 2.25rem 1.5rem; }
   .page-header { padding: 3.5rem 1.5rem 2.5rem; }
+}
+
+/* ------- Parallax band (full-bleed) -------
+   Classic parallax: the background is fixed to the viewport while the
+   content scrolls over it. Swap background-image for a real photo
+   (e.g. url('../images/court-aerial.jpg')) when you have one.
+   ------------------------------------------ */
+.parallax-band {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1.5rem;
+  margin: 5rem 0;
+  color: #F5F5F7;
+  overflow: hidden;
+  isolation: isolate;
+
+  background-color: #15181B;
+  background-image:
+    radial-gradient(ellipse at 25% 40%, rgba(212,255,58,0.28), transparent 55%),
+    radial-gradient(ellipse at 80% 70%, rgba(212,255,58,0.12), transparent 50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Faint court-line pattern, sits on top of the fixed bg so it moves with the section */
+.parallax-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.parallax-band-inner {
+  max-width: 780px;
+  text-align: center;
+  position: relative;
+}
+
+.parallax-kicker {
+  display: inline-block;
+  color: var(--accent-ink);
+  background: var(--accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 1.75rem;
+}
+
+.parallax-quote {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.parallax-quote em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.parallax-attr {
+  color: rgba(245,245,247,0.65);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+/* iOS / mobile: fixed backgrounds cause jank and bugs — fall back to static */
+@media (max-width: 820px), (hover: none) and (pointer: coarse) {
+  .parallax-band {
+    background-attachment: scroll;
+    min-height: 55vh;
+    padding: 4.5rem 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parallax-band { background-attachment: scroll; }
 }
 
 /* ------- Tiny utilities ------- */
