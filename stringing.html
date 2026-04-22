@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Stringing Services & Strings — Alameda Racket Stringing</title>
+  <meta name="description" content="Tennis stringing in Alameda, CA. In-stock: Luxilon ALU Power, Babolat RPM Hurricane, Tourna, Kirschbaum, Golden Set. Fair prices, fast turnaround.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================== NAV ======================== -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span class="mark"></span>Alameda Racket Stringing</a>
+      <ul class="nav-links">
+        <li><a href="stringing.html" class="active">Stringing</a></li>
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-cta"><a href="tel:+15109054241" class="btn btn-primary">Call 510-905-4241</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======================== PAGE HEADER ======================== -->
+  <header class="page-header">
+    <div class="hero-bg">
+      <div class="hero-glow"></div>
+    </div>
+    <span class="eyebrow">Stringing Services</span>
+    <h1 style="margin-top:1rem;">The string makes<br>the racket.</h1>
+    <p class="lede">Drop off your frame, pick your string, get it back the next day. I stock the strings my customers actually ask for — nothing gathering dust, and no tennis-shop upcharge.</p>
+  </header>
+
+  <!-- ======================== PROCESS ======================== -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">How it works</span>
+        <h2 class="display">Three steps.<br>No hassle.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h4>Call or text first</h4>
+          <p>Ring me at <a href="tel:+15109054241" style="color:var(--accent);">510-905-4241</a> or email to schedule a drop-off. I string out of my apartment in Alameda, by appointment only.</p>
+        </div>
+        <div class="step">
+          <h4>Pick your string</h4>
+          <p>Don't know what you want? I'll ask a few questions about your game and suggest something. Need a full-bed or a hybrid? I do both.</p>
+        </div>
+        <div class="step">
+          <h4>Play again tomorrow</h4>
+          <p>Most racks are back in your hands within 24 hours. Priced fair — because Alameda shouldn't need to drive to Oakland for a re-string.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== LABOR PRICING ======================== -->
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Labor &amp; add-ons</span>
+          <h2 class="display" style="font-size:clamp(1.9rem,4.5vw,3rem);margin:0.75rem 0 1rem;">Simple, transparent.</h2>
+          <p class="muted" style="font-size:1.05rem;">Prices below are everything-in. The number on each string card is what you pay — string + labor, installed on your frame.</p>
+          <p class="muted" style="font-size:0.95rem;margin-top:1rem;">Want a hybrid setup (two different strings)? No problem — price is the sum of the two, same labor.</p>
+        </div>
+        <div>
+          <ul class="service-list">
+            <li>
+              <div>
+                <span class="svc-name">Full re-string</span>
+                <span class="svc-desc">Standard tennis racket, any string from the menu</span>
+              </div>
+              <span class="svc-price">From $5</span>
+            </li>
+            <li>
+              <div>
+                <span class="svc-name">You bring the string</span>
+                <span class="svc-desc">Labor only — string of your choice</span>
+              </div>
+              <span class="svc-price">$15</span>
+            </li>
+            <li>
+              <div>
+                <span class="svc-name">Hybrid setup</span>
+                <span class="svc-desc">Poly mains / syn-gut crosses or any combo</span>
+              </div>
+              <span class="svc-price">String + labor</span>
+            </li>
+            <li>
+              <div>
+                <span class="svc-name">Rush (same-day)</span>
+                <span class="svc-desc">Morning drop-off, afternoon pickup — ask me first</span>
+              </div>
+              <span class="svc-price">+$5</span>
+            </li>
+          </ul>
+          <p class="muted" style="font-size:0.85rem;margin-top:0.75rem;"><em>Rates are examples — confirm final pricing when you call. Edit <code>stringing.html</code> to adjust.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== STRINGS CATALOG ======================== -->
+  <section id="strings">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">In-stock strings</span>
+        <h2 class="display">What I've got on the rack.</h2>
+        <p>Prices shown are installed — that's string + labor together. Swap strings or update prices any time by editing <code>data/strings.json</code>.</p>
+      </div>
+
+      <div id="string-grid" class="string-grid">
+        <!-- rendered by js/strings.js -->
+        <div class="feature-card" style="grid-column:1/-1;text-align:center;color:var(--text-muted);">Loading strings…</div>
+      </div>
+
+      <p class="muted mt-3" style="font-size:0.92rem;max-width:720px;">
+        Don't see what you play with? I can special-order most tennis strings on request — just let me know what you want and I'll quote you a price.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section style="padding-top:2rem;">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Drop it off</span>
+        <h2 class="display">Let's get you strung.</h2>
+      </div>
+
+      <div class="contact-row">
+        <div class="contact-card">
+          <div class="label">Phone</div>
+          <div class="value"><a href="tel:+15109054241">510-905-4241</a></div>
+          <div class="note">Call or text — I'll reply fastest here.</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Email</div>
+          <div class="value"><a href="mailto:alamedastringing@gmail.com">alamedastringing@gmail.com</a></div>
+          <div class="note">Good for photos of a damaged frame or hybrid setup questions.</div>
+        </div>
+        <div class="contact-card">
+          <div class="label">Location</div>
+          <div class="value">Alameda, CA</div>
+          <div class="note">Strung from my apartment — please call first to schedule a drop-off.</div>
+        </div>
+      </div>
+
+      <div class="cta-banner" style="margin-top:3rem;">
+        <h2 class="display">Got a match this weekend?</h2>
+        <p>Call or text now and we'll get your racket back in your hands by tomorrow.</p>
+        <div class="btn-row" style="justify-content:center;">
+          <a href="tel:+15109054241" class="btn btn-primary">Call 510-905-4241</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Alameda Racket Stringing</h4>
+        <p class="footer-tag">Local tennis stringing and private coaching. Based in Alameda, California — serving the whole Bay Area.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="stringing.html">Stringing</a>
+        <a href="coaching.html">Coaching</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+15109054241">510-905-4241</a>
+        <a href="mailto:alamedastringing@gmail.com">alamedastringing@gmail.com</a>
+        <p class="muted" style="font-size:0.88rem;margin-top:0.5rem;">Strung out of my apartment — please call in advance.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="y"></span> Alameda Racket Stringing</span>
+      <span>Alameda, California</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="js/strings.js"></script>
+</body>
+</html>

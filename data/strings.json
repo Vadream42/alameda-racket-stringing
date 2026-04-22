@@ -1,0 +1,93 @@
+[
+  {
+    "id": "snake-bite",
+    "name": "Golden Set Snake-Bite",
+    "brand": "Golden Set",
+    "gauge": "16G",
+    "price": 10,
+    "type": "Shaped Poly",
+    "tags": ["Spin", "Control", "Value"],
+    "color1": "#CDD428",
+    "color2": "#5A7A1E",
+    "image": "",
+    "description": "A fang-profiled shaped copolymer that bites into the ball for aggressive spin. Crisp response, lively pocketing, and respectable tension retention — a smart value pick if you want premium-poly feel without the premium-poly price."
+  },
+  {
+    "id": "kirschbaum-syn-gut",
+    "name": "Kirschbaum Synthetic Gut",
+    "brand": "Kirschbaum",
+    "gauge": "16G",
+    "price": 5,
+    "type": "Synthetic Gut",
+    "tags": ["Comfort", "Power", "Budget"],
+    "color1": "#F5F0E1",
+    "color2": "#C9BFA5",
+    "image": "",
+    "description": "A friendly, forgiving all-rounder with soft feel and easy power. My go-to recommendation for recreational players, arm-sensitive hitters, or anyone who wants dependable performance on a tight stringing budget."
+  },
+  {
+    "id": "rpm-hurricane",
+    "name": "Babolat RPM Hurricane",
+    "brand": "Babolat",
+    "gauge": "17G",
+    "price": 12,
+    "type": "Shaped Poly",
+    "tags": ["Spin", "Control", "Durability"],
+    "color1": "#2A2A2A",
+    "color2": "#000000",
+    "image": "",
+    "description": "A spin-biased co-poly with an octagonal cross-section that grabs the ball on contact. Firmer than a standard poly, with predictable depth and outstanding durability. A strong fit for players who generate their own pace."
+  },
+  {
+    "id": "t1-firewire",
+    "name": "T1-Firewire",
+    "brand": "Toalson",
+    "gauge": "16G",
+    "price": 10,
+    "type": "Poly",
+    "tags": ["Power", "Pop", "Spin"],
+    "color1": "#FF5722",
+    "color2": "#B71C1C",
+    "image": "",
+    "description": "Bold color, bold response. Toalson's Firewire is a lively copolymer that rewards full, loopy swings with explosive pop and reliable topspin. Great as a full bed for big hitters or paired with a softer cross."
+  },
+  {
+    "id": "big-hitter-silver",
+    "name": "Tourna Big Hitter Silver",
+    "brand": "Tourna",
+    "gauge": "17G",
+    "price": 10,
+    "type": "Smooth Poly",
+    "tags": ["Control", "Tension Retention", "All-Court"],
+    "color1": "#D0D3D4",
+    "color2": "#808588",
+    "image": "",
+    "description": "A smooth-profile polyester that holds tension unusually well for the price. Balanced feel, crisp pocketing, and a softer launch than most polys — a staple for all-court baseliners looking for consistency set after set."
+  },
+  {
+    "id": "tourna-premium-poly",
+    "name": "Tourna Premium Poly",
+    "brand": "Tourna",
+    "gauge": "16G",
+    "price": 5,
+    "type": "Poly",
+    "tags": ["Durability", "Control", "Budget"],
+    "color1": "#4A4A4A",
+    "color2": "#1A1A1A",
+    "image": "",
+    "description": "An honest, no-frills workhorse poly that punches above its price. Durable, consistent, and well-behaved — ideal as a full bed for frequent re-stringers or as the cross string in a hybrid setup."
+  },
+  {
+    "id": "alu-power-rough",
+    "name": "Luxilon ALU Power Rough",
+    "brand": "Luxilon",
+    "gauge": "17G",
+    "price": 20,
+    "type": "Premium Textured Poly",
+    "tags": ["Tour-Level", "Spin", "Control"],
+    "color1": "#C0C0C0",
+    "color2": "#606A70",
+    "image": "",
+    "description": "The benchmark pro-tour poly, now with a textured profile for extra bite on the ball. Firm, crisp, and precise with elite spin potential. If you've ever wondered what the ATP and WTA tour play with, this is it."
+  }
+]
