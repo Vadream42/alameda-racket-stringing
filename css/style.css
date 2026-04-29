@@ -998,6 +998,71 @@ section { padding: 5rem 0; }
   .parallax-band { background-attachment: scroll; }
 }
 
+/* ------- Labor banner (stringing page) ------- */
+.labor-banner {
+  background: linear-gradient(135deg, var(--accent), #a8d42a);
+  color: var(--accent-ink);
+  border-radius: var(--radius-xl);
+  padding: 3.25rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.labor-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.labor-banner .labor-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1;
+  margin: 0;
+}
+
+.labor-banner .labor-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.5rem 0.95rem;
+  background: var(--accent-ink);
+  color: var(--accent);
+  border-radius: 999px;
+}
+
+.labor-banner .labor-amount {
+  font-size: clamp(4.5rem, 14vw, 9rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.labor-banner .labor-unit {
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.15;
+}
+
+@media (max-width: 620px) {
+  .labor-banner { padding: 2.5rem 1.25rem; }
+  .labor-banner .labor-text { gap: 0.6rem; }
+}
+
 /* ------- Tiny utilities ------- */
 .mt-1 { margin-top: 0.5rem; }
 .mt-2 { margin-top: 1rem; }

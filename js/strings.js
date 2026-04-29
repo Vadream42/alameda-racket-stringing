@@ -53,7 +53,7 @@
               <div class="string-name">${escape(s.name)}</div>
               <div class="string-gauge">${escape(s.gauge || '')}${s.type ? ' · ' + escape(s.type) : ''}</div>
             </div>
-            <div class="string-price">$${Number(s.price).toFixed(0)}<span class="per">Installed</span></div>
+            <div class="string-price">$${Number(s.price).toFixed(0)}<span class="per">String only</span></div>
           </div>
           <p class="string-desc">${escape(s.description || '')}</p>
           <div class="string-tags">${tags}</div>
